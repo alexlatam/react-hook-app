@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { CounterApp } from './01-useState/CounterApp.jsx'
 // import { CounterWihtCustomHook } from './01-useState/CounterWihtCustomHook.jsx';
 // import { SimpleForm } from './02-useEffect/SimpleForm.jsx';
-import { SimpleFormWithCustomHook } from './02-useEffect/SimpleFormWithCustomHook.jsx';
+// import { SimpleFormWithCustomHook } from './02-useEffect/SimpleFormWithCustomHook.jsx';
+import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks.jsx';
 
 import './index.css'
 
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <CounterApp /> */}
     {/* <CounterWihtCustomHook /> */}
     {/* <SimpleForm /> */}
-    <SimpleFormWithCustomHook />
+    {/* <SimpleFormWithCustomHook /> */}
+    <MultipleCustomHooks />
   </React.StrictMode>,
 )
