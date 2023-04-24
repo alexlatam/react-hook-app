@@ -7,6 +7,20 @@ export const CounterApp = () => {
     counter3: 30
   });
 
+  const increment = (counter) => {
+    setState({
+      ...state,
+      [counter]: state[counter] + 1
+    });
+  };
+
+  const decrement = (counter) => {
+    setState({
+      ...state,
+      [counter]: state[counter] - 1
+    });
+  };
+
   return (
     <>
       <h1>First Counter: {state.counter1} </h1>
@@ -22,23 +36,13 @@ export const CounterApp = () => {
             <div className="col-12">
               <button
                 className="btn btn-primary"
-                onClick={() =>
-                  setState({
-                    ...state,
-                    counter1: state.counter1 + 1
-                  })
-                }
+                onClick={ () => increment("counter1") }
               >
                 Increment
               </button>
               <button
                 className="btn btn-outline-info"
-                onClick={() =>
-                  setState({
-                    ...state,
-                    counter1: state.counter1 - 1
-                  })
-                }
+                onClick={() => decrement("counter1") }
               >
                 Decrement
               </button>
@@ -51,23 +55,13 @@ export const CounterApp = () => {
             <div className="col-12">
               <button
                 className="btn btn-primary"
-                onClick={() =>
-                  setState({
-                    ...state,
-                    counter2: state.counter2 + 1
-                  })
-                }
+                onClick={() => increment("counter2") }
               >
                 Increment
               </button>
               <button
                 className="btn btn-outline-info"
-                onClick={() =>
-                  setState({
-                    ...state,
-                    counter2: state.counter2 - 1
-                  })
-                }
+                onClick={() => decrement("counter2") }
               >
                 Decrement
               </button>
@@ -81,23 +75,13 @@ export const CounterApp = () => {
             <div className="col-12">
               <button
                 className="btn btn-primary"
-                onClick={() =>
-                  setState({
-                    ...state,
-                    counter3: state.counter3 + 1
-                  })
-                }
+                onClick={() => increment("counter3") }
               >
                 Increment
               </button>
               <button
                 className="btn btn-outline-info"
-                onClick={() =>
-                  setState({
-                    ...state,
-                    counter3: state.counter3 - 1
-                  })
-                }
+                onClick={() => decrement("counter3") }
               >
                 Decrement
               </button>
