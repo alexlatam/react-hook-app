@@ -13,7 +13,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Memorize } from './06-memos/Memorize.jsx';
 // import { MemorizeHook } from './06-memos/MemorizeHook.jsx';
 // import { CallbackHook } from './06-memos/CallbackHook.jsx';
-import { Padre } from './07-tarea-memo/Padre.jsx';
+// import { Padre } from './07-tarea-memo/Padre.jsx';
+// import './08-useReducer/intro-reducer'
+import { TodoApp } from './08-useReducer/TodoApp.jsx';
+
 
 import './index.css'
 
@@ -30,6 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Memorize /> */}
     {/* <MemorizeHook /> */}
     {/* <CallbackHook /> */}
-    <Padre />
+    {/* <Padre /> */}
+    <TodoApp />
   </React.StrictMode>,
 )
